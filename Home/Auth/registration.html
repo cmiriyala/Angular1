@@ -1,0 +1,80 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+            <form class="form-horizontal" role="form" ng-submit="processForm()">
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Full Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="Full Name" class="form-control" ng-model="user.firstname" autofocus>
+                    </div>
+                </div>
+                                <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-3 control-label">Phone:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phoneNumber" placeholder="Phone Number" class="form-control" ng-model="user.phoneNumber" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email:</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control" ng-model="user.email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth:</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control" ng-model="user.birthDate">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">Gender:</label>
+                    <div class="col-sm-9">
+                        <select id="gender" class="form-control" ng-model="user.gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div> <!-- /.form-group --> <!-- /.form-group -->
+               
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">I accept <a href="#">terms</a> and conditions
+                            </label>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+
+        <style>
+        body {
+    background-color: #eee;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+
+        </style>
